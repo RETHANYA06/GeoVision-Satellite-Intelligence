@@ -66,3 +66,32 @@ Used the EuroSAT dataset:
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
+📷 Demo
+
+Upload a satellite image and get predictions like:
+
+Prediction: River
+Confidence: 71.95%
+📁 Project Structure
+geovision-satellite-intelligence/
+│
+├── app.py
+├── src/
+│   ├── dataset.py
+│   ├── model.py
+│   ├── train.py
+│   ├── predict.py
+│
+├── data/
+├── models/
+└── README.md
+
+🔬 Future Improvements
+🔥 Grad-CAM explainability (highlight image regions)
+🚀 Transfer learning (ResNet, EfficientNet)
+📈 Accuracy improvement (>92%)
+🌍 Geo-spatial mapping integration
+🛰️ Multi-spectral satellite image support
+👨‍💻 Author
+
+Built by a Computer Science student exploring AI applications in Aerospace 
