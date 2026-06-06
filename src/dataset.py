@@ -4,7 +4,7 @@ from torch.utils.data import DataLoader, random_split
 def get_dataloaders(data_dir, batch_size=32):
 
     transform = transforms.Compose([
-        transforms.Resize((64, 64)),
+        transforms.Resize((244, 244)),
         transforms.ToTensor()
     ])
 
