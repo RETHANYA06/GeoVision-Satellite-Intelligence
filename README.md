@@ -14,23 +14,28 @@ It demonstrates the application of **Computer Vision + Remote Sensing + Deep Lea
 
 ## 🚀 Features
 
-- 🧠 CNN-based image classification model
-- 🛰️ Satellite image analysis (EuroSAT dataset)
-- 🌍 10 land-cover categories prediction
-- 🖥️ Streamlit web interface
-- 📊 Confidence score output
-- ⚡ Real-time image inference
+- Satellite image classification
+- 10 land-cover categories
+- Top-3 prediction display
+- Confidence scoring
+- Grad-CAM explainability
+- Interactive web dashboard
+- Live cloud deployment
 
 ---
 
 ## 🧠 Tech Stack
 
+## Tech Stack
+
 - Python
 - PyTorch
-- Torchvision
-- OpenCV
 - Streamlit
+- OpenCV
+- NumPy
+- Pandas
 - Scikit-learn
+- EuroSAT Dataset
 
 ---
 
@@ -81,6 +86,11 @@ Used the EuroSAT dataset:
 https://YOUR-APP-LINK.streamlit.app
 
 ***********************************
+ ## 🌐 Live Application
+
+https://geovision-satellite-intelligence-eom7b7dnc9cyffxhk3qjv9.streamlit.app
+
+************************************8
 
 👨‍💻 Author
 
