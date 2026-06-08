@@ -61,37 +61,27 @@ Used the EuroSAT dataset:
 
 ---
 
-## 🖥️ How to Run
-
-```bash
-pip install -r requirements.txt
-streamlit run app.py
-📷 Demo
-
-Upload a satellite image and get predictions like:
-
-Prediction: River
-Confidence: 71.95%
-📁 Project Structure
-geovision-satellite-intelligence/
-│
-├── app.py
-├── src/
-│   ├── dataset.py
-│   ├── model.py
-│   ├── train.py
-│   ├── predict.py
-│
-├── data/
-├── models/
-└── README.md
-
 🔬 Future Improvements
 🔥 Grad-CAM explainability (highlight image regions)
 🚀 Transfer learning (ResNet, EfficientNet)
 📈 Accuracy improvement (>92%)
 🌍 Geo-spatial mapping integration
 🛰️ Multi-spectral satellite image support
+
+----
+![Python](https://img.shields.io/badge/Python-3.13-blue)
+![PyTorch](https://img.shields.io/badge/PyTorch-DeepLearning-red)
+![Streamlit](https://img.shields.io/badge/Streamlit-WebApp-green)
+![Computer Vision](https://img.shields.io/badge/ComputerVision-SatelliteAI-orange)
+
+
+************************************
+## Live Demo
+
+https://YOUR-APP-LINK.streamlit.app
+
+***********************************
+
 👨‍💻 Author
 
 Built by a Computer Science student exploring AI applications in Aerospace 
