@@ -23,6 +23,7 @@ model = SatelliteCNN(num_classes=len(classes))
 model.load_state_dict(
     torch.load("models/satellite_cnn.pth", map_location=device)
 )
+
 model.to(device)
 model.eval()
 
@@ -36,13 +37,31 @@ def predict_image(image):
     image = transform(image).unsqueeze(0).to(device)
 
     with torch.no_grad():
+
         outputs = model(image)
 
         probabilities = torch.softmax(outputs, dim=1)
 
-        confidence, predicted = torch.max(probabilities, 1)
+        top_probs, top_indices = torch.topk(
+            probabilities,
+            3
+        )
 
-    return (
-        classes[predicted.item()],
-        confidence.item() * 100
-    )
+    prediction = classes[top_indices[0][0].item()]
+
+    confidence = top_probs[0][0].item() * 100
+
+    top3 = []
+
+    for prob, idx in zip(
+        top_probs[0],
+        top_indices[0]
+    ):
+        top3.append(
+            (
+                classes[idx.item()],
+                prob.item() * 100
+            )
+        )
+
+    return prediction, confidence, top3
