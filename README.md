@@ -90,7 +90,7 @@ https://YOUR-APP-LINK.streamlit.app
 
 https://geovision-satellite-intelligence-eom7b7dnc9cyffxhk3qjv9.streamlit.app
 
-************************************8
+************************************
 
 👨‍💻 Author
 
