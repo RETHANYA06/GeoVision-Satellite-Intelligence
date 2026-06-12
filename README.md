@@ -59,7 +59,7 @@ Used the EuroSAT dataset:
 ## 🎯 Model Performance
 
 - Model: Custom CNN
-- Accuracy: **85.83%**
+- Accuracy: **92.83%**
 - Input: 64x64 RGB satellite images
 - Loss Function: CrossEntropyLoss
 - Optimizer: Adam
@@ -69,7 +69,6 @@ Used the EuroSAT dataset:
 🔬 Future Improvements
 🔥 Grad-CAM explainability (highlight image regions)
 🚀 Transfer learning (ResNet, EfficientNet)
-📈 Accuracy improvement (>92%)
 🌍 Geo-spatial mapping integration
 🛰️ Multi-spectral satellite image support
 
